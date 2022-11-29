@@ -1,0 +1,15 @@
+{
+	"prod_time": 1.5,
+
+	"size": 3,
+	"energy": 240,
+
+	"input1": 4,
+	"input1_time": 2.66,
+
+	"input2": 6,
+	"input2_time": 4,
+
+	"input3": 1,
+	"input3_time": 0.66
+}
