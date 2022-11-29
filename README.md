@@ -2,4 +2,4 @@
 
 My new counting system for counting block's efficiency
 
-TODO: UI
+TODO: GUI
