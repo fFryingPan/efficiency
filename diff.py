@@ -14,7 +14,7 @@ def getInput(object):
     # Count inputs
     input1 = object['input1'] / object['input1_time']
     input2 = object['input2'] / object['input2_time']
-    
+
     # Third property check
     if hasattr(object, 'input3'):
         input3 = object['input3'] / object['input3_time']
@@ -29,4 +29,5 @@ def getResult(input1, input2):
     return first / second
 
 if __name__ == "__main__":
-    print(f"First is more efficiency on: {getResult(getInput(object1), getInput(object2))}")
+    result = round(getResult(getInput(object1), getInput(object2)), 2)
+    print(f"First is more efficiency on: {result}")
