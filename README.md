@@ -1,5 +1,5 @@
-# Count the block's efficiency
+# Counts the block's efficiency
 
-My new counting system for counting block's efficiency, uses energy, size, input and output params to compare
+My new counting system for counting blocks efficiency, using energy, size, input and output resources to compare
 
 TODO: GUI, OOP
