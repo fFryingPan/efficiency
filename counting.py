@@ -38,5 +38,5 @@ class Main:
         # * Taking object
         object = self.object
         # ! Calculating output and returning result
-        output = object['prod_time'] + object['energy'] / object['size']
+        output = (object['prod_time'] + object['energy']) / object['size']
         return round(input + output, 2)
