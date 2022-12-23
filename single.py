@@ -4,12 +4,15 @@ import counting as count
 class Main:
     def __init__(self):
         self.object_name = "small_sili"
-        # ! Creating a "counting" object through the library
+        # ! Creating an object through the library
         self.object = count.Main(self.object_name)
+        # * Taking the input
+        self.input = self.object.getInput()
+
+    def showResult(self):
+        result = self.object.getResult(self.input)
+        print(f"Block's efficiency: {result}")
 
 
 if __name__ == "__main__":
-    cs = Main().object
-    # * Taking an input from the object
-    input = cs.getInput()
-    print(f"Block's efficiency is {cs.getResult(input)}")
+    Main().showResult()

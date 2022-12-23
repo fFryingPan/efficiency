@@ -12,7 +12,7 @@ class Main:
         try:
             with open('blocks/' + self.file_name + '.json') as file:
                 self.object = json.load(file)
-            print('Take block passed.')
+            print('Taking block passed.')
             return self.object
         except Exception as e:
             print(f"Error: {e}")
@@ -21,22 +21,22 @@ class Main:
         # * Taking object
         object = self.getJSON()
 
-        # ? If 3 input exists
+        # ? If 3 inputs exists
         if hasattr(object, 'input3'):
             self.inputs = [object['input1'] / object['input1_time'],
                            object['input2'] / object['input2_time'],
                            object['input3'] / object['input3_time']]
-            print("Inputs confirmed.")
+            print("3 inputs taken.")
             return self.inputs[0] + self.inputs[1] + self.inputs[2]
         else:
             self.inputs = [object['input1'] / object['input1_time'],
                            object['input2'] / object['input2_time']]
-            print("Inputs confirmed.")
+            print("2 inputs taken.")
             return self.inputs[0] + self.inputs[1]
 
     def getResult(self, input):
         # * Taking object
         object = self.object
-        # ! Calculating output
+        # ! Calculating output and returning result
         output = object['prod_time'] + object['energy'] / object['size']
         return round(input + output, 2)
